@@ -1,5 +1,5 @@
 
-# Snowplow fork - to create custom builds for NewsID
+# NewsID Snowplow fork
 
 * NewsID needs **samesite** and **secure** cookie headers, which SP is not going to release anytime soon, hence the need for forking and customizing
 
