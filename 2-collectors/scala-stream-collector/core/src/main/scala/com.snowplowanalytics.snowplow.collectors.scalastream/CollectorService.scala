@@ -293,7 +293,8 @@ class CollectorService(
           value   = networkUserId,
           expires = Some(DateTime.now + config.expiration.toMillis),
           domain  = config.domain,
-          path    = Some("/")
+          path    = Some("/"),
+					extension = Some("SameSite= Lax")
         )
         `Set-Cookie`(responseCookie)
       }
