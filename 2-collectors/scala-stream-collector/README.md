@@ -1,3 +1,7 @@
+
+### NewsID: [create jar from source code](BuildJar.md) 
+
+
 # Scala Stream Collector
 
 ## Introduction
