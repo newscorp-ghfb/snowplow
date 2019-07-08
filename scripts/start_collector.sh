@@ -1,0 +1,2 @@
+#!/bin/bash
+bash -c 'java -javaagent:/etc/newrelic/newrelic.jar -jar collectorApp/snowplow-stream-collector.jar --config collectorApp/config/collector.conf &> collectorApp/collector-THISWILLCHANGE-stdout.log & jobs -p %1'

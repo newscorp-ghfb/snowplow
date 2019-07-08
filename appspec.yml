@@ -1,0 +1,15 @@
+version: 0.0
+os: linux
+files:
+  - source: collectorApp
+    destination: collectorApp
+hooks:
+  BeforeInstall:
+    - location: collectorApp/scripts/kill_previous_one.sh
+      timeout: 40
+  ApplicationStart:
+    - location: collectorApp/scripts/start_collector.sh
+      timeout: 40
+  ValidateService:
+    - location: collectorApp/scripts/health_check.sh
+      timeout: 70
